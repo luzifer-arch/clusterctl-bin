@@ -2,7 +2,7 @@
 
 pkgname=clusterctl-bin
 pkgdesc="Cluster API Tool"
-pkgver=1.6.1
+pkgver=1.7.2
 pkgrel=1
 arch=('x86_64')
 url="https://cluster-api.sigs.k8s.io/"
@@ -10,7 +10,7 @@ license=('Apache')
 optdepends=('kubectl: to manage the cluster')
 provides=('clusterctl')
 source=("clusterctl-linux-amd64-v$pkgver::https://github.com/kubernetes-sigs/cluster-api/releases/download/v$pkgver/clusterctl-linux-amd64")
-sha256sums=('238fa9e22ac559d3624569d4de90217dabb28c7ca3f2b4fd08280472aaf131cf')
+sha256sums=('e39f19d88d9e87992ce710e468239d2ecdffdb9b81a5da7c926e0288c892c0e3')
 
 package() {
     install -Dm0755 "$srcdir/clusterctl-linux-amd64-v$pkgver" "$pkgdir/usr/bin/clusterctl"
