@@ -1,3 +1,4 @@
 *
 !.gitignore
 !PKGBUILD
+!update_version.sh
