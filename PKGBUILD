@@ -1,8 +1,9 @@
-# Maintainer: Sergey Yakovlev <selfuryon@gmail.com>
+# Contributor: Sergey Yakovlev <selfuryon@gmail.com>
+# Maintainer: Knut Ahlers
 
 pkgname=clusterctl-bin
 pkgdesc="Cluster API Tool"
-pkgver=1.7.2
+pkgver=1.8.1
 pkgrel=1
 arch=('x86_64')
 url="https://cluster-api.sigs.k8s.io/"
@@ -10,7 +11,7 @@ license=('Apache')
 optdepends=('kubectl: to manage the cluster')
 provides=('clusterctl')
 source=("clusterctl-linux-amd64-v$pkgver::https://github.com/kubernetes-sigs/cluster-api/releases/download/v$pkgver/clusterctl-linux-amd64")
-sha256sums=('e39f19d88d9e87992ce710e468239d2ecdffdb9b81a5da7c926e0288c892c0e3')
+sha256sums=('04f95a7ad03f9a31aaa268f30326075fbdf2e4b8af65173543e0e445ca4bdb2e')
 
 package() {
     install -Dm0755 "$srcdir/clusterctl-linux-amd64-v$pkgver" "$pkgdir/usr/bin/clusterctl"
