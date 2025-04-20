@@ -1,4 +1,4 @@
 *
 !.gitignore
 !PKGBUILD
-!update_version.sh
+!renovate.json
