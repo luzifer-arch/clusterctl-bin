@@ -3,7 +3,7 @@
 
 pkgname=clusterctl-bin
 pkgdesc="Cluster API Tool"
-pkgver=1.8.1 # renovate: depName=kubernetes-sigs/cluster-api datasource=github-releases
+pkgver=1.9.6 # renovate: depName=kubernetes-sigs/cluster-api datasource=github-releases
 pkgrel=1
 arch=('x86_64')
 url="https://cluster-api.sigs.k8s.io/"
