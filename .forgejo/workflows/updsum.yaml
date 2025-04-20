@@ -26,7 +26,8 @@ jobs:
         with:
           show-progress: false
 
-      - uses: https://git.luzifer.io/luzifer-arch/updpkgsums-action@578bda2a57581f35544b15ab2c4ab503ad98a066
+      - name: Update PKGBUILD with helper script
+        run: updpkgsums-builder
 
       - uses: stefanzweifel/git-auto-commit-action@v5.2.0
         with:
