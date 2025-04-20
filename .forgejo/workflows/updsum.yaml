@@ -26,7 +26,7 @@ jobs:
         with:
           show-progress: false
 
-      - uses: https://git.luzifer.io/luzifer-arch/updpkgsums-action@408d9469939be2e5e714c1717838ab6237bf58cc
+      - uses: https://git.luzifer.io/luzifer-arch/updpkgsums-action@578bda2a57581f35544b15ab2c4ab503ad98a066
 
       - uses: stefanzweifel/git-auto-commit-action@v5.2.0
         with:
