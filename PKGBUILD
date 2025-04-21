@@ -11,7 +11,7 @@ license=('Apache')
 optdepends=('kubectl: to manage the cluster')
 provides=('clusterctl')
 source=("clusterctl-linux-amd64-v$pkgver::https://github.com/kubernetes-sigs/cluster-api/releases/download/v$pkgver/clusterctl-linux-amd64")
-sha256sums=('04f95a7ad03f9a31aaa268f30326075fbdf2e4b8af65173543e0e445ca4bdb2e')
+sha256sums=('e6a8843b3464eea3c5f98432128a914c5d8e44c2be1f308cf40a72aa98155d8c')
 
 package() {
     install -Dm0755 "$srcdir/clusterctl-linux-amd64-v$pkgver" "$pkgdir/usr/bin/clusterctl"
